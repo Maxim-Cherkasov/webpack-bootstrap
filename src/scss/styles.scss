@@ -117,3 +117,26 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
 }
+
+.sup {
+  color: #25d366;
+}
+
+.tg {
+  color: #2aabee;
+}
+
+.call {
+  color: #6d9dd7;
+}
+header .navbar .container {
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+
+    .nav-item {
+      padding-right: 1rem;
+      padding-bottom: 3px;
+    }
+  }
+}
