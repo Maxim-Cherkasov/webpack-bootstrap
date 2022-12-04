@@ -118,6 +118,14 @@ body {
   font-weight: 400;
 }
 
+header .navbar .container .navbar-nav {
+  flex-direction: row;
+
+  li {
+    padding-right: 1rem;
+  }
+}
+
 .sup {
   color: #25d366;
 }
@@ -127,16 +135,9 @@ body {
 }
 
 .call {
-  color: #6d9dd7;
+  color: #a473ffb9;
 }
-header .navbar .container {
-  .navbar-nav {
-    display: flex;
-    flex-direction: row;
 
-    .nav-item {
-      padding-right: 1rem;
-      padding-bottom: 3px;
-    }
-  }
+h4 {
+  color: #acbeccdf;
 }
