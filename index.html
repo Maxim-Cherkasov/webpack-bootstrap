@@ -15,61 +15,42 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar bg-light">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
+          <h1 class="h4">Projects</h1>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item order-2">
+              <a class="nav-link" href="tel:+79628677152">
+                <svg class="bi call" width="32" height="32" fill="currentColor">
+                  <use
+                    xlink:href="./bootstrap-icons/bootstrap-icons.svg#telephone"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href=" https://wa.me/+79628677152?text="
+              >
+                <svg class="bi sup" width="32" height="32" fill="currentColor">
+                  <use
+                    xlink:href="./bootstrap-icons/bootstrap-icons.svg#whatsapp"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://t.me/lx_mm">
+                <svg class="bi tg" width="32" height="32" fill="currentColor">
+                  <use
+                    xlink:href="./bootstrap-icons/bootstrap-icons.svg#telegram"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -220,113 +201,9 @@
       </div>
     </main>
 
-    <div class="container-lg border mb-5">
-      <!--cont-ls means it will be fluid till lg size-->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
-            <img src="./img/finance-lg.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Consulting company</h5>
-              <p class="card-text">
-                Figma to HTML of a consulting company landing page. SCSS,
-                Flexbox, Grid, BEM, WEBPACK, GULP.
-              </p>
-              <a
-                href="https://maxim-cherkasov.github.io/finance_consultancy/"
-                class="btn btn-primary px-4"
-                >Visit</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
-            <img src="./img/finance-lg.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Consulting company</h5>
-              <p class="card-text">
-                Figma to HTML of a consulting company landing page. SCSS,
-                Flexbox, Grid, BEM, WEBPACK, GULP.
-              </p>
-              <a
-                href="https://maxim-cherkasov.github.io/finance_consultancy/"
-                class="btn btn-primary px-4"
-                >Visit</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div
-            class="card p-2 border border-3 border-primary rounded-4 mb-4 align-self-end"
-          >
-            <img src="./img/finance-lg.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Consulting company</h5>
-              <p class="card-text">
-                Figma to HTML of a consulting company landing page. SCSS,
-                Flexbox, Grid, BEM, WEBPACK, GULP.
-              </p>
-              <a
-                href="https://maxim-cherkasov.github.io/finance_consultancy/"
-                class="btn btn-primary px-4"
-                >Visit</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
-            <img src="./img/movers-lg.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Cargo transportation servise</h5>
-              <p class="card-text">
-                A high conversion landing page for Yandex ad campaigns made with
-                w3CSS framework for a cargo transportation dispatcher. I
-                analyzed competitors, wrote selling texts, made website’s
-                architecture for changing its content for different keywords
-                from Yandex ads.
-              </p>
-              <a
-                href=" https://cargo-transportation.vercel.app/
-            "
-                class="btn btn-primary px-4"
-                >Visit</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">vb</div>
-      </div>
-    </div>
-
-    <!-- Playground -->
-
-    <div class="container">
-      <div class="row">
-        <div class="col-5">
-          <div class="card" style="width: 18rem">
-            <img src="./img/tg-lg.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <footer class="footer mt-auto py-3">
       <div class="container">
-        <span class="text-muted"
-          >Copyrights
-          <a href="https://mdbootstrap.com">MDBootstrap.com</a></span
-        >
+        <span class="text-muted">Copyright 2022</span>
         <div class="toast-container">
           <div
             class="toast"
