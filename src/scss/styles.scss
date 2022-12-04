@@ -45,7 +45,7 @@ $success: #7952b3;
 @import "~bootstrap/scss/reboot";
 
 @import "~bootstrap/scss/type";
-// @import "~bootstrap/scss/images";
+@import "~bootstrap/scss/images";
 @import "~bootstrap/scss/containers";
 @import "~bootstrap/scss/grid";
 // @import "~bootstrap/scss/tables";
@@ -54,9 +54,9 @@ $success: #7952b3;
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/dropdown";
 // @import "~bootstrap/scss/button-group";
-// @import "~bootstrap/scss/nav";
-// @import "~bootstrap/scss/navbar"; // Requires nav
-// @import "~bootstrap/scss/card";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar"; // Requires nav
+@import "~bootstrap/scss/card";
 // @import "~bootstrap/scss/breadcrumb";
 // @import "~bootstrap/scss/accordion";
 // @import "~bootstrap/scss/pagination";
@@ -65,7 +65,7 @@ $success: #7952b3;
 // @import "~bootstrap/scss/progress";
 // @import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/close";
-// @import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/toasts";
 @import "~bootstrap/scss/modal"; // Requires transitions
 // @import "~bootstrap/scss/tooltip";
 @import "~bootstrap/scss/popover";
@@ -86,6 +86,34 @@ $success: #7952b3;
 
 @import "icon-list";
 
+.navbar {
+  color: grey;
+  background: linear-gradient(270deg, #774037, #1a2f85, #761a85);
+}
+
+footer {
+  background-color: #392e5c;
+}
+
+main .btn {
+  background-color: #9946fb;
+  color: black;
+  &:hover {
+    background-color: shade-color(#2274a5, 10%);
+  }
+}
+
+// my styles today
+main .row .column .card {
+  background-color: #392e5c;
+  color: rgb(248, 248, 248);
+}
+
+html,
 body {
-  padding: 1.5rem;
+  background-color: #201c2b;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }

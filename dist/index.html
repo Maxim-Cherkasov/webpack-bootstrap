@@ -1,153 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap w/ Webpack</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
   </head>
   <body>
-    <div class="container py-4 px-3 mx-auto">
-      <header
-        class="d-flex justify-content-between align-items-md-center pb-3 mb-5 border-bottom"
-      >
-        <h1 class="h4">
-          <a
-            href="/"
-            class="d-flex align-items-center text-dark text-decoration-none"
-          >
-            <img
-              class="d-inline-block me-2"
-              width="40"
-              height="32"
-              src="https://raw.githubusercontent.com/twbs/bootstrap/main/site/static/docs/5.2/assets/brand/bootstrap-logo-black.svg"
-              alt="Bootstrap"
-            />
-            <span>Webpack</span>
-          </a>
-        </h1>
-        <a
-          href="https://github.com/twbs/examples/tree/main/webpack/"
-          target="_blank"
-          rel="noopener"
-          >View on GitHub</a
-        >
-      </header>
-
-      <h1>Build Bootstrap with Webpack</h1>
-      <div class="col-lg-8 px-0">
-        <p class="fs-4">
-          You've successfully loaded the Bootstrap + Webpack example! It's
-          loaded up with <a href="https://getbootstrap.com/">Bootstrap 5</a> and
-          uses Webpack to compile and bundle our Sass and JavaScript. It also
-          includes Autoprefixer.
-        </p>
-        <p>
-          If this button appears blue and the link appears purple, you've done
-          it!
-        </p>
-      </div>
-
-      <button
-        type="button"
-        class="btn btn-primary me-3"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasExample"
-      >
-        Toggle offcanvas
-      </button>
-      <a
-        id="popoverButton"
-        class="text-success"
-        href="#"
-        role="button"
-        data-bs-toggle="popover"
-        title="Custom popover"
-        data-bs-content="This is a Bootstrap popover."
-        >Example popover</a
-      >
-
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasExample"
-        aria-labelledby="offcanvasExampleLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
           <button
+            class="navbar-toggler"
             type="button"
-            class="btn-close text-reset"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you
-            have chosen. Like, text, images, lists, etc.
-          </div>
-          <div class="dropdown mt-3">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton"
-              data-bs-toggle="dropdown"
-            >
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5">
+      <div class="container">
+        <div class="row my-5 justify-content-center">
+          <div class="column col-md-12 col-lg-4 column-left">
+            <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
+              <img
+                src="./img/furniture-lg.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Furniture store</h5>
+                <p class="card-text">
+                  Figma to HTML of a furniture store mockup with complex sliders
+                  using JavaScript, CSS, Flexbox, Grid, BEM, WEBPACK, GULP and
+                  AJAX (adding additional items from JSON).
+                </p>
+                <a
+                  href="https://funiro-pink.vercel.app/
+                "
+                  class="btn btn-primary px-4"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
+              <img src="./img/finance-lg.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Consulting company</h5>
+                <p class="card-text">
+                  Figma to HTML of a consulting company landing page. SCSS,
+                  Flexbox, Grid, BEM, WEBPACK, GULP.
+                </p>
+                <a
+                  href="https://maxim-cherkasov.github.io/finance_consultancy/"
+                  class="btn btn-primary px-4"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
+              <img src="./img/game2-lg.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">JavaScript game</h5>
+                <p class="card-text">Play with your friend, have fun!</p>
+                <a
+                  href="https://maxim-cherkasov.github.io/js-game-guess-my-number/
+                "
+                  class="btn btn-primary px-4"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
+              <img src="./img/port-lg.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Portfolio</h5>
+                <p class="card-text">SCSS, JavaScript.</p>
+                <a
+                  href="https://maxim-cherkasov.github.io/portfolio/index.html
+
+                "
+                  class="btn btn-primary px-4"
+                  >Visit</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="column col-md-12 col-lg-4">
+            <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
+              <img src="./img/real-lg.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Real estate company</h5>
+                <p class="card-text">
+                  Pixel perfect for a real estate company. Initially made with
+                  pure CSS and Floats, then remade with Flexbox for all screen
+                  sizes.
+                </p>
+                <a
+                  href="https://maxim-cherkasov.github.io/real-estate-resp/
+
+                "
+                  class="btn btn-primary px-4"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
+              <img src="./img/movers-lg.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Cargo transportation servise</h5>
+                <p class="card-text">
+                  A high conversion landing page for Yandex ad campaigns made
+                  with w3CSS framework for a cargo transportation dispatcher. I
+                  analyzed competitors, wrote selling texts, made website’s
+                  architecture for changing its content for different keywords
+                  from Yandex ads.
+                </p>
+                <a
+                  href=" https://cargo-transportation.vercel.app/
+                "
+                  class="btn btn-primary px-4"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
+              <img src="./img/tg-lg.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Telegram channels</h5>
+                <p class="card-text">
+                  Designed and built a website with telegram channels for
+                  frontend developers. CSS, Flexbox.
+                </p>
+                <a
+                  href="https://maxim-cherkasov.github.io/frontend-telegram-channels/
+                "
+                  class="btn btn-primary px-4"
+                  >Visit</a
+                >
+              </div>
+            </div>
+            <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
+              <img src="./img/game1-lg.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">JavaScript game</h5>
+                <p class="card-text">
+                  Guess a number generated by a computer. You will see tips when
+                  your number is too high or too low. You have 20 tries and your
+                  highest score will be fixed. Game can be restarted at any
+                  moment.
+                </p>
+                <a
+                  href="https://maxim-cherkasov.github.io/js-pig-game/
+
+                "
+                  class="btn btn-primary px-4"
+                  >Visit</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </main>
 
-      <hr class="col-1 my-5 mx-0" />
-
-      <h2>Guides</h2>
-      <p>
-        Read more detailed instructions and documentation on using or
-        contributing to Bootstrap.
-      </p>
-      <ul class="icon-list">
-        <li>
-          <a
-            href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"
-            >Bootstrap quick start guide</a
+    <div class="container-lg border mb-5">
+      <!--cont-ls means it will be fluid till lg size-->
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
+            <img src="./img/finance-lg.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Consulting company</h5>
+              <p class="card-text">
+                Figma to HTML of a consulting company landing page. SCSS,
+                Flexbox, Grid, BEM, WEBPACK, GULP.
+              </p>
+              <a
+                href="https://maxim-cherkasov.github.io/finance_consultancy/"
+                class="btn btn-primary px-4"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
+            <img src="./img/finance-lg.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Consulting company</h5>
+              <p class="card-text">
+                Figma to HTML of a consulting company landing page. SCSS,
+                Flexbox, Grid, BEM, WEBPACK, GULP.
+              </p>
+              <a
+                href="https://maxim-cherkasov.github.io/finance_consultancy/"
+                class="btn btn-primary px-4"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="card p-2 border border-3 border-primary rounded-4 mb-4 align-self-end"
           >
-        </li>
-        <li>
-          <a href="https://getbootstrap.com/docs/5.2/getting-started/webpack/"
-            >Bootstrap Webpack guide</a
-          >
-        </li>
-        <li>
-          <a href="https://getbootstrap.com/docs/5.2/getting-started/parcel/"
-            >Bootstrap Parcel guide</a
-          >
-        </li>
-        <li>
-          <a href="https://getbootstrap.com/docs/5.2/getting-started/vite/"
-            >Bootstrap Vite guide</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://getbootstrap.com/docs/5.2/getting-started/build-tools/"
-            >Contributing to Bootstrap</a
-          >
-        </li>
-      </ul>
-
-      <hr class="mt-5 mb-4" />
-
-      <p class="text-muted">
-        Created and open sourced by the Bootstrap team. Licensed MIT.
-      </p>
+            <img src="./img/finance-lg.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Consulting company</h5>
+              <p class="card-text">
+                Figma to HTML of a consulting company landing page. SCSS,
+                Flexbox, Grid, BEM, WEBPACK, GULP.
+              </p>
+              <a
+                href="https://maxim-cherkasov.github.io/finance_consultancy/"
+                class="btn btn-primary px-4"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-2 border border-3 border-primary rounded-4 mb-4">
+            <img src="./img/movers-lg.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Cargo transportation servise</h5>
+              <p class="card-text">
+                A high conversion landing page for Yandex ad campaigns made with
+                w3CSS framework for a cargo transportation dispatcher. I
+                analyzed competitors, wrote selling texts, made website’s
+                architecture for changing its content for different keywords
+                from Yandex ads.
+              </p>
+              <a
+                href=" https://cargo-transportation.vercel.app/
+            "
+                class="btn btn-primary px-4"
+                >Visit</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">vb</div>
+      </div>
     </div>
 
+    <!-- Playground -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <div class="card" style="width: 18rem">
+            <img src="./img/tg-lg.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted"
+          >Copyrights
+          <a href="https://mdbootstrap.com">MDBootstrap.com</a></span
+        >
+        <div class="toast-container">
+          <div
+            class="toast"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="..." />
+              <strong class="me-auto">Bootstrap</strong>
+              <small class="text-muted">just now</small>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="toast-body">See? Just like this.</div>
+          </div>
+
+          <div
+            class="toast"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="toast-header">
+              <img src="..." class="rounded me-2" alt="..." />
+              <strong class="me-auto">Bootstrap</strong>
+              <small class="text-muted">2 seconds ago</small>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="toast-body">
+              Heads up, toasts will stack automatically
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="./main.js"></script>
   </body>
 </html>
