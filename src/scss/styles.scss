@@ -9,7 +9,6 @@
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
-
 //
 // Bring in Bootstrap
 //
@@ -28,12 +27,12 @@
 $enable-gradients: true;
 $enable-shadows: true;
 
-$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 
 // Customize some defaults
 $body-color: #333;
 $body-bg: #fff;
-$border-radius: .4rem;
+$border-radius: 0.4rem;
 $success: #7952b3;
 
 // Required
@@ -45,6 +44,8 @@ $success: #7952b3;
 @import "~bootstrap/scss/root";
 @import "~bootstrap/scss/reboot";
 
+$primary: tint-color(#2274a5, 60%);
+
 @import "~bootstrap/scss/type";
 // @import "~bootstrap/scss/images";
 @import "~bootstrap/scss/containers";
@@ -55,9 +56,9 @@ $success: #7952b3;
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/dropdown";
 // @import "~bootstrap/scss/button-group";
-// @import "~bootstrap/scss/nav";
-// @import "~bootstrap/scss/navbar"; // Requires nav
-// @import "~bootstrap/scss/card";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar"; // Requires nav
+@import "~bootstrap/scss/card";
 // @import "~bootstrap/scss/breadcrumb";
 // @import "~bootstrap/scss/accordion";
 // @import "~bootstrap/scss/pagination";
@@ -66,13 +67,13 @@ $success: #7952b3;
 // @import "~bootstrap/scss/progress";
 // @import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/close";
-// @import "~bootstrap/scss/toasts";
+@import "~bootstrap/scss/toasts";
 @import "~bootstrap/scss/modal"; // Requires transitions
 // @import "~bootstrap/scss/tooltip";
-@import "~bootstrap/scss/popover";
+// @import "~bootstrap/scss/popover";
 // @import "~bootstrap/scss/carousel";
 // @import "~bootstrap/scss/spinners";
-@import "~bootstrap/scss/offcanvas"; // Requires transitions
+// @import "~bootstrap/scss/offcanvas"; // Requires transitions
 // @import "~bootstrap/scss/placeholders";
 
 // Helpers
@@ -81,13 +82,64 @@ $success: #7952b3;
 // Utilities
 @import "~bootstrap/scss/utilities/api";
 
-
 //
 // Custom styles
 //
 
 @import "icon-list";
 
+.navbar {
+  color: grey;
+  background: linear-gradient(270deg, #774037, #1a2f85, #761a85);
+}
+
+footer {
+  background-color: #392e5c;
+}
+
+main .btn {
+  background-color: #9946fb;
+  color: black;
+  &:hover {
+    background-color: shade-color(#2274a5, 10%);
+  }
+}
+
+// my styles today
+main .row .column .card {
+  background-color: #392e5c;
+  color: rgb(248, 248, 248);
+}
+
+html,
 body {
-  padding: 1.5rem;
+  background-color: #201c2b;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+header .navbar .container .navbar-nav {
+  flex-direction: row;
+
+  li {
+    padding-right: 1rem;
+  }
+}
+
+.sup {
+  color: #25d366;
+}
+
+.tg {
+  color: #2aabee;
+}
+
+.call {
+  color: #6bd6da;
+}
+
+h4 {
+  color: tint-color(#2c698d, 60%);
 }
